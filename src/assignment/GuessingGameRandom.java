@@ -32,7 +32,7 @@ public class GuessingGameRandom {
             } else {
                 System.out.println("Incorrect, try again");
             }
-        } while (!(randomRightNumber == read));
+        } while (randomRightNumber != read);
 
     }
 }

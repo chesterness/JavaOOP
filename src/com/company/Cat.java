@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cat extends Animal{
+public class Cat implements Animal{
     public void sound (){
         System.out.println("Meow!");
     }

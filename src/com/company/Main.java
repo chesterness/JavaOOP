@@ -15,10 +15,13 @@ public class Main {
         for (Animal animal : animals){
             animal.sound();
         }
-        //dog.sound(3);doesn't work, because Dog is an Animal object and not Dog object.
+        //dog.sound(3); //doesn't work, because Dog is an Animal object and not Dog object.
         ((Dog)dog).sound(3);//it casts the dog object which is Animal type into Dog type
         //this casting is unsafe, use it carefully
 
+        dog.defaultMethod();
+        cat.defaultMethod();
+        Animal.staticMethod();
 
     }
 
